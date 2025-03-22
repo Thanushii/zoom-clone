@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import animate from 'tailwindcss-animate';
 
 const config = {
   darkMode: ['class'],
@@ -27,6 +28,7 @@ const config = {
         },
         blue: {
           1: '#0E78F9',
+          2: '#6c9bc4',
         },
         sky: {
           1: '#C9DDFF',
@@ -41,6 +43,9 @@ const config = {
         },
         yellow: {
           1: '#F9A90E',
+        },
+        teal: {
+          1: '#73c8d2',
         },
       },
       keyframes: {
@@ -62,7 +67,7 @@ const config = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [animate],
 } satisfies Config;
 
 export default config;
